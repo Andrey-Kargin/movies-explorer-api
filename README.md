@@ -23,4 +23,9 @@
 `npm run start` — запускает сервер   
 `npm run dev` — запускает сервер с hot-reload
 
-Ссылка на репозиторий: https://github.com/Andrey-Kargin/express-mesto-gha
+Ссылка на репозиторий: https://github.com/Andrey-Kargin/movies-explorer-api
+
+Ссылка на публичный сервер:
+
+IP 51.250.84.187
+https://api.movies-explorer-app.nomoreparties.sbs

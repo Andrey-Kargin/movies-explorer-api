@@ -2,7 +2,7 @@
   "name": "movies-explorer-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "lint": "npx eslint .",
     "start": "node app.js",
@@ -24,7 +24,9 @@
     "cors": "^2.8.5",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
     "express-winston": "^2.6.0",
+    "helmet": "^7.0.0",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.2.4",
     "validator": "^13.9.0",
