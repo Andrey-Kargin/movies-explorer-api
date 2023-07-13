@@ -3,8 +3,9 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
-const limiter = require('./middlewares/rateLimiter');
 const { errors } = require('celebrate');
+const cors = require('cors');
+const limiter = require('./middlewares/rateLimiter');
 
 const { login, createUser } = require('./controllers/users');
 
@@ -17,6 +18,8 @@ const { PORT = 3000, MONGO_URL = 'mongodb://127.0.0.1:27017/bitfilmsdb' } = proc
 mongoose.connect(MONGO_URL);
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 app.use(helmet());
